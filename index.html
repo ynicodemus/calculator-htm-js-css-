@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <input id="result" type="text" id="result" placeholder="0" value="0" disabled>
+        
+        <div>
+            <input class="darkcolor" type="button" value="%" onclick="percent('%')">
+            <input class="darkcolor" type="button" value="√" onclick="root('√')">
+            <input class="darkcolor" type="button" value="C" onclick="clearInput()">
+            <input class="darkcolor" type="button" value="⌫" onclick="del()">
+        </div>
+
+        <div>
+            <input class="lightcolor" type="button" value="1" onclick="appendNnumber(1)">
+            <input class="lightcolor" type="button" value="2" onclick="appendNnumber(2)">
+            <input class="lightcolor" type="button" value="3" onclick="appendNnumber(3)">
+            <input class="darkcolor" type="button" value=" /" onclick="operators('/')">
+        </div>
+
+        <div>
+            <input class="lightcolor" type="button" value="4" onclick="appendNnumber(4)">
+            <input class="lightcolor" type="button" value="5" onclick="appendNnumber(5)">
+            <input class="lightcolor" type="button" value="6" onclick="appendNnumber(6)">
+            <input class="darkcolor" type="button" value=" *" onclick="operators('*')">
+        </div>
+
+        <div>
+            <input class="lightcolor" type="button" value="7" onclick="appendNnumber(7)">
+            <input class="lightcolor" type="button" value="8" onclick="appendNnumber(8)">
+            <input class="lightcolor" type="button" value="9" onclick="appendNnumber(9)">
+            <input class="darkcolor" type="button" value="+" onclick="operators('+')">
+        </div>
+
+
+        <div>
+            <input class="darkcolor" type="button" value="." onclick="appendNnumber('.')">
+            <input class="lightcolor" type="button" value="0" onclick="appendNnumber(0)">
+            <input class="darkcolor" type="button" value="=" onclick="calculate()">
+            <input class="darkcolor" type="button" value=" -" onclick="operators('-')">
+        </div>
+    </div>
+    <script src="javascripts.js">
+
+    </script>
+</body>
+</html>
